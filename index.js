@@ -51,6 +51,7 @@ colorButtons.forEach(button => {
         changeColor(colorCode);
         buttonAnimation(colorCode);
 
+
     });
 });
 
