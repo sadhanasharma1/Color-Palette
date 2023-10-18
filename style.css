@@ -70,4 +70,13 @@ h3{
         align-items:center;
         justify-content:center;
     }
+      .item{
+        width:200px;
+        height:150px;
+    }
+    #white{
+        width:200px;
+        height:50px;
+    }
+        
 }
