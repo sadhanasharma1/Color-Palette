@@ -54,7 +54,6 @@
 
 //     });
 // });
-
 $(document).ready(function() {
     function changeColor(color) {
         $('body').css('backgroundColor', color);
@@ -77,12 +76,11 @@ $(document).ready(function() {
         localStorage.setItem("selectedColors", JSON.stringify(selectedColors));
     });
 
-    $(document).ready(function() {
-        var selectedColors = JSON.parse(localStorage.getItem("selectedColors")) || [];
-        if (selectedColors.length > 0) {
-            changeColor(selectedColors[selectedColors.length - 1]);
-        }
-    });
+    // Set initial background color from localStorage
+    var selectedColors = JSON.parse(localStorage.getItem("selectedColors")) || [];
+    if (selectedColors.length > 0) {
+        changeColor(selectedColors[selectedColors.length - 1]);
+    }
 });
 
 
